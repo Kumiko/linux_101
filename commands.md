@@ -276,6 +276,24 @@ Print the user name of the currently logged on users.
 
 ## vim
 
+Usage: `vim <file>`
+
+Advanced text editor. `vim` is often the default editor when other commands opens an editor and thus it's required to know at least some basic `vim` usage.
+
+Interaction with `vim` is divided into two modes, interactive mode and command mode. Command mode is the default and provides the ability to edit the text via different commands. Interactive mode is what most people are familiar with from other text editors, but this mode must first be activated before text can be entered.
+
+To change from interactive mode to command mode, simply press the `Escape` button on your keyboard.
+
+Interactive mode can be activated by typing either `i` (Before the cursor), `a` (After the cursor), `I` (At the beginning of the line), `A` (At the end of the line), `o` (New line below cursor) or `O` (New line above cursor).
+
+The cursor can be moved by typing `h` (Left), `j` (Down), `k` (Up) or `l` (Right).
+
+Once all edits have been made, exit `vim` by exiting interactive mode (Press `Escape`) and typing `:wq` to save the changes and quit. If no changes have been made, simply type `:q` to quit. If changes have been made but should be discarded, type `:q!` to quit and discard changes.
+
+There's also a shortcut to save and quit in command mode, simply press `ZZ` to save and quit.
+
+The editor of choice can be adjusted by setting the environment variable `EDITOR` to the editor of choice.
+
 ## watch
 
 Usage: `watch <command>`
