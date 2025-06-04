@@ -14,7 +14,7 @@ Copy a file or directory from the source to the destination.
 
 Useful flags:
 
-* `-R` or `-r` -- Copy directories recursively
+* `-R` or `-r` &mdash; Copy directories recursively
 
 ## date
 
