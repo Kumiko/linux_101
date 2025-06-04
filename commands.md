@@ -81,11 +81,45 @@ Useful flags:
 
 ## groups
 
+Usage: `groups` or `groups <username>`
+
+Print the groups the current user is in or groups of the specified user.
+
 ## head
+
+Usage: `tail <file>` or `tail`
+
+Print the first 10 lines of the specified file or input.
+
+Useful flags:
+
+* `-n <num>` &mdash; Print `<num>` lines instead of the default 10
 
 ## history
 
+Usage: `history`
+
+Print the previously executed commands.
+
 ## kill
+
+Usage: `kill <pid>`
+
+Kill a running process by process id `<pid>`.
+
+Useful flags:
+
+* `-9` &mdash; Forcefully kill the process
+
+## killall
+
+Usage: `killall <name>`
+
+Kill all running processes matching `<name>`.
+
+Useful flags:
+
+* `-9` &mdash; Forcefully kill the process
 
 ## less
 
