@@ -1,0 +1,13 @@
+# Lab 4
+
+Create a text file on your local computer.
+
+Transfer the file to the Linux computer into the /tmp folder.
+
+View the contents of the file on the Linux computer.
+
+On Microsoft Windows, this can be achieved by using the `scp` client WinSCP.
+
+On MacOS and Linux machines, this can be achieved by running the `scp` command
+from a terminal.
+

@@ -1,0 +1,4 @@
+# Lab 7
+
+Escalate privileges and shut down the Linux system.
+

@@ -1,0 +1,12 @@
+# Lab 2
+
+Gather the following system information about the Linux computer:
+
+* Uptime
+* Number of CPUs
+* Amount of RAM (In MB)
+* Amount of swap (In MB)
+* Number of network interfaces (Excluding lo) and IPv4 address of each
+* Total disk size of / (In GB)
+* Current date
+

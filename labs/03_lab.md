@@ -1,0 +1,17 @@
+# Lab 3
+
+Create a new directory in your home directory on the Linux computer.
+
+List all files in your directory.
+
+Copy /etc/hosts into your directory.
+
+List all files in your directory.
+
+View the contents of the hosts file within your directory.
+
+Use an editor to append a new line `127.0.0.1 coolhost` to the hosts file and
+replace the system hosts file with your edited hosts file.
+
+Verify that the new host can be looked up by running `ping coolhost`.
+
