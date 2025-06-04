@@ -49,9 +49,35 @@ Useful flags:
 
 ## file
 
+Usage: `file <filename>`
+
+Determine the file type of the specified file. Useful before viewing a file with unknown content to prevent printing a large binary file to the terminal.
+
 ## free
 
+Usage: `free`
+
+Display the amount of free and usage memory and swap in the system.
+
+Useful flags:
+
+* `-m` &mdash; Print sizes in mebibytes
+* `-g` &mdash; Print sizes in gibibytes
+* `-h` &mdash; Print sizes in human readable form (Kibibytes, Mebibytes, Gibibytes, etc.)
+
 ## grep
+
+Usage: `grep <pattern>` or `grep <pattern> <file>`
+
+Filter input or file by pattern. Useful to find if `<pattern>` exists within a file or filtering output from another command, example: `tail -f /var/log/messages | grep error`.
+
+Useful flags:
+
+* `-E` &mdash; Interpret `<pattern>` as a regular expression
+* `-o` &mdash; Print only the matching pattern
+* `-A <num>` &mdash; Print `<num>` number of lines after the matching line
+* `-B <num>` &mdash; Print `<num>` number of lines before the matching line
+* `-r` &mdash; Treat `<file>` as a directory and find `<pattern>` in each file recursively in the directory
 
 ## groups
 
