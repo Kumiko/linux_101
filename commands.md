@@ -24,7 +24,28 @@ Print the current date and time.
 
 ## df
 
+Usage: `df` or `df <filesystem>`
+
+Print filesystem usage. Append the filesystem name to print usage about that specific filesystem.
+
+Useful flags:
+
+* `-h` &mdash; Print sizes in human readable form (E.g. 198M instead of 202700)
+
 ## dig
+
+Usage: `dig <domain>` or `dig <domain> <type>` or `dig @<server> <domain> <type>`
+
+Lookup a domain name. Tries to lookup A records by default.
+
+Choose which DNS server to contact by setting `@<server>` parameter.
+
+Choose which record type to return by setting the `<type>` parameter. Common types are `A` (IPv4 record), `AAAA` (IPv6 record), `NS` (DNS server for the domain), `MX` (E-mail servers for the domain).
+
+Useful flags:
+
+* `--short` &mdash; Print only the query result (E.g. the IPv4 address of an A record)
+* `-x` &mdash; Lookup an IP address to domain name mapping (Reverse pointer record). Example: `dig -x 8.8.8.8`
 
 ## file
 
