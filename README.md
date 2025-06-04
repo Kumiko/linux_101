@@ -28,3 +28,8 @@ establishes a connection to the Linux computer.
 A collection of commands that can be used to excute all labs can be found
 [here](commands.md).
 
+## Terminal shortcuts
+
+A collection of useful terminal keyboard shortcuts can be found
+[here](terminal_shortcuts.md).
+
