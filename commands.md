@@ -67,7 +67,7 @@ Useful flags:
 
 ## grep
 
-Usage: `grep <pattern>` or `grep <pattern> <file>`
+Usage: `<command> | grep <pattern>` or `grep <pattern> <file>`
 
 Filter input or file by pattern. Useful to find if `<pattern>` exists within a file or filtering output from another command, example: `tail -f /var/log/messages | grep error`.
 
@@ -87,7 +87,7 @@ Print the groups the current user is in or groups of the specified user.
 
 ## head
 
-Usage: `tail <file>` or `tail`
+Usage: `tail <file>` or `<command> | tail`
 
 Print the first 10 lines of the specified file or input.
 
@@ -123,11 +123,48 @@ Useful flags:
 
 ## less
 
+Usage: `less <file>` or `<command> | less`
+
+View text page by page.
+
+Press `/` and type a pattern to search for pattern within the text. Press `n` to find the next match and `N` to find the previous match.
+
+Press `q` to quit.
+
+`less` and `more` accomplishes the same thing, but `less` is preferred because it is `more` but enhanced (Highlights search pattern, can search backwards).
+
 ## ls
+
+Usage: `ls <directory>` or `ls`
+
+Lists contents of the `<directory>` or the current directory if none was specified.
+
+Useful flags:
+
+* `-a` &mdash; Print hidden files or directories (Files or directories prefixed with a dot `.`)
+* `-l` &mdash; Print one file or directory per line
 
 ## mkdir
 
+Usage: `mkdir <directory>`
+
+Create a directory if it doesn't exist yet.
+
+Useful flags:
+
+* `-p` &mdash; No errors if the directory already exists. Creates all directories in the `<directory>` path if specified, e.g. `/tmp/a/b/c` will first create `/tmp`, then `/tmp/a`, then `/tmp/a/b` and lastly `/tmp/a/b/c`.
+
 ## more
+
+Usage: `more <file>` or `<command> | more`
+
+View text page by page.
+
+Press `/` and type a pattern to search for pattern within the text. Press `n` to find the next match.
+
+Press `q` to quit.
+
+`less` and `more` accomplishes the same thing, but `less` is preferred because it is `more` but enhanced (Highlights search pattern, can search backwards).
 
 ## mv
 
