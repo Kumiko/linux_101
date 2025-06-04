@@ -1,10 +1,35 @@
 # Commands
 
+A collection of commands that can be used to solve all the exercises.
+
+## Basic structure of a command
+
+`<command> <arguments>`
+
+Examples:
+
+```
+df -hlTP
+du -sh *
+mv source_file target_file
+```
+
+The command name can be a single word (`cat`) or the full path to the command
+(`/bin/cat`).
+
+Everything after the command name are arguments to the command. Arguments can
+be divided into two categories, positional arguments and flags. Flags are
+prefixed with dash (`-`) or double dash (`--`). Single dash flags are usually
+one letter and multiple flags can be combined into one argument, example
+`-hlTP`. Double dash flags have longer names and cannot be combined into a
+single argument. Example `--basic --append`.
+
 ## cat
 
 Usage: `cat <file>` or `cat <file1> <file2>`
 
-Print the contents of a file. Multiple files can be specified to print the contents of all files.
+Print the contents of a file. Multiple files can be specified to print the
+contents of all files.
 
 ## cp
 
@@ -26,7 +51,8 @@ Print the current date and time.
 
 Usage: `df` or `df <filesystem>`
 
-Print filesystem usage. Append the filesystem name to print usage about that specific filesystem.
+Print filesystem usage. Append the filesystem name to print usage about that
+specific filesystem.
 
 Useful flags:
 
@@ -34,24 +60,30 @@ Useful flags:
 
 ## dig
 
-Usage: `dig <domain>` or `dig <domain> <type>` or `dig @<server> <domain> <type>`
+Usage: `dig <domain>` or `dig <domain> <type>` or
+`dig @<server> <domain> <type>`
 
 Lookup a domain name. Tries to lookup A records by default.
 
 Choose which DNS server to contact by setting `@<server>` parameter.
 
-Choose which record type to return by setting the `<type>` parameter. Common types are `A` (IPv4 record), `AAAA` (IPv6 record), `NS` (DNS server for the domain), `MX` (E-mail servers for the domain).
+Choose which record type to return by setting the `<type>` parameter. Common
+types are `A` (IPv4 record), `AAAA` (IPv6 record), `NS` (DNS server for the
+domain), `MX` (E-mail servers for the domain).
 
 Useful flags:
 
-* `--short` &mdash; Print only the query result (E.g. the IPv4 address of an A record)
-* `-x` &mdash; Lookup an IP address to domain name mapping (Reverse pointer record). Example: `dig -x 8.8.8.8`
+* `--short` &mdash; Print only the query result (E.g. the IPv4 address of an
+A record)
+* `-x` &mdash; Lookup an IP address to domain name mapping (Reverse pointer
+record). Example: `dig -x 8.8.8.8`
 
 ## file
 
 Usage: `file <filename>`
 
-Determine the file type of the specified file. Useful before viewing a file with unknown content to prevent printing a large binary file to the terminal.
+Determine the file type of the specified file. Useful before viewing a file
+with unknown content to prevent printing a large binary file to the terminal.
 
 ## free
 
@@ -63,7 +95,8 @@ Useful flags:
 
 * `-m` &mdash; Print sizes in mebibytes
 * `-g` &mdash; Print sizes in gibibytes
-* `-h` &mdash; Print sizes in human readable form (Kibibytes, Mebibytes, Gibibytes, etc.)
+* `-h` &mdash; Print sizes in human readable form (Kibibytes, Mebibytes,
+Gibibytes, etc.)
 
 ## grep
 
