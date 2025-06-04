@@ -87,7 +87,7 @@ Print the groups the current user is in or groups of the specified user.
 
 ## head
 
-Usage: `tail <file>` or `<command> | tail`
+Usage: `head <file>` or `<command> | head`
 
 Print the first 10 lines of the specified file or input.
 
@@ -129,6 +129,8 @@ View text page by page.
 
 Press `/` and type a pattern to search for pattern within the text. Press `n` to find the next match and `N` to find the previous match.
 
+Press `g` to navigate to the top of the text and `G` to the bottom of the text.
+
 Press `q` to quit.
 
 `less` and `more` accomplishes the same thing, but `less` is preferred because it is `more` but enhanced (Highlights search pattern, can search backwards).
@@ -143,6 +145,12 @@ Useful flags:
 
 * `-a` &mdash; Print hidden files or directories (Files or directories prefixed with a dot `.`)
 * `-l` &mdash; Print one file or directory per line
+
+## man
+
+Usage: `man <command>`
+
+Read the manual of `<command>`. `man` uses `less` as the viewer and thus it's possible to navigate and search within a manual page using `less` instructions.
 
 ## mkdir
 
@@ -168,33 +176,111 @@ Press `q` to quit.
 
 ## mv
 
+Usage: `mv <source> <destination>`
+
+Move or rename a file or directory.
+
 ## nano
 
-## nc
+Usage: `nano <file>`
+
+Basic text editor.
+
+Quit by typing `Ctrl+X`, then `y` to save the file or `n` to quit without saving.
 
 ## ping
 
+Usage: `ping <address>`
+
+Send ICMP ECHO requests to the specified address. Address can be either IP address or a domain name.
+
+Useful flags:
+
+* `-c <count>` &mdash; Send `<count>` requests before quiting. Use `-c 4` to match the behavior of ping in Microsoft Windows
+
 ## ps
+
+Usage: `ps`
+
+Print currently running processes. By default it prints processes owned by the current user.
+
+Useful flags:
+
+* `a` &mdash; List runnings processes of all users
 
 ## pwd
 
+Usage: `pwd`
+
+Print the current directory.
+
 ## rm
+
+Usage: `rm <file>`
+
+Remove a file or directory.
+
+Useful flags:
+
+* `-f` &mdash; Forcefully remove without asking for permission
+* `-r` &mdash; Remove recursively, required for removing directories
 
 ## su
 
+Usage: `su <user>`
+
+Switch user to the specified user. The user parameter can be omitted and defaults to the `root` user.
+
 ## sudo
+
+Usage: `sudo <command>` or `sudo -u <user> <command>`
+
+Run a command as the `root` user or the specfied user.
+
+To start a new shell as `root`, run `sudo -i`. `sudo su -` should never be used.
+
+Unlike `su` which requests the password of the user being switched to, `sudo` requests the password of the user invoking the `sudo` command. There are specific rules to allow users to issue any or specific commands without typing a password. On cloud-ready images this is the default for all commands.
+
+* `-i` &mdash; Start a shell as the specified user
+* `-s` &mdash; Login a new session as the specified user
+* `-u <user>` &mdash; Run the command as the specified user
 
 ## tail
 
+Usage: `tail <file>` or `<command> | tail`
+
+Print the last 10 lines of the specified file or input.
+
+Useful flags:
+
+* `-f` &mdash; Continue printing new lines, useful for viewing log files which are continuously being written to
+* `-n <num>` &mdash; Print `<num>` lines instead of the default 10
+
 ## top
+
+Usage: `top`
+
+Open a real-time view of running processes and basic system information. Think of it like the terminal version of the Windows Task Manager.
 
 ## touch
 
+Usage: `touch <file>`
+
+Update the last accessed and last modified time of the specified `<file>` and optionally create the file if it doesn't exist.
+
 ## users
+
+Usage: `users`
+
+Print the user name of the currently logged on users.
 
 ## vim
 
 ## watch
+
+Usage: `watch <command>`
+
+Repeatedly execute `<command>` and print the output. The default is to execute the command every 2 seconds, but this can be adjusted via the `-n <seconds>` flag.
 
 ## whoami
 
