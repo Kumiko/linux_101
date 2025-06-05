@@ -9,7 +9,7 @@ computer.
 
 
 
-## Labs
+## Exercises
 
 Each exercise should be carried out in order, but can be carried out in order
 of choice. The only prerequisite is [exercise 1](exercises/01.md), which
